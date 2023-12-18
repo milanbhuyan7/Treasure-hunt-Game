@@ -1,0 +1,30 @@
+print("Welcome to Treasure hunt Game")
+print("Your in middle of the mountain \nDo you want to go up or Down ?")
+
+choice1 = int(input("Enter 1 to Go UP or 2 to go DOWN:\t"))
+
+if choice1 == 2:
+    print("You Reached bottom of the mountain ! Standing in front of the Island")
+    choice2 = int(input("Enter 1 to Swim or 2 to wait for the Boat:\t"))
+    if choice2 == 2:
+        print("You reached the Island and standing in front of the house!")
+        print("There are 3 doors in front of you  1) RED \n2) BLUE \n3) YELLOW")
+        choice3 = int(input("Enter the door number :\t"))
+        if choice3 == 1:
+            print("Room is full of fire! You died")
+        elif choice3 == 2:
+            print("Attacked by monsters! You died")
+        elif choice3 == 3:
+            print("You found the Treasure \nyou won the Game !!!!!")
+        else:
+            print("Please choose the correct option")
+    elif choice2 == 1:
+        print("You attacked by the Crocodile! and Died *_*")
+        print("Game over!")
+    else:
+        print("Please choose the correct option")
+elif choice1 == 1:
+    print("You Reached top of the mountain ! and fell down Died *_*")
+    print("Game over!")
+else:
+    print("Please choose the correct option")
